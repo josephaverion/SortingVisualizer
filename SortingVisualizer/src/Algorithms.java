@@ -195,7 +195,6 @@ public class Algorithms {
 			}
 			Thread.sleep(speed);
 			visual.repaint();
-			
 		}
 		
 		while(leftArrIndex < temp_middle) {
@@ -203,7 +202,6 @@ public class Algorithms {
 			visual.bar_height[newArrIndex++] = temp[leftArrIndex++];
 			Thread.sleep(speed);
 			visual.repaint();
-			
 		}
 		
 		while(rightArrIndex < temp.length) {
