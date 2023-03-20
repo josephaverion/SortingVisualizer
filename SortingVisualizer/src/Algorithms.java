@@ -271,7 +271,7 @@ public class Algorithms {
 	private static int median(int l, int m, int r) {
 		double left	= visual.bar_height[l];
 		double middle = visual.bar_height[m];
-		double right = visual.bar_height[r];
+		double right = visual.bar_height[r];	
 		
 		if((left > middle) != (left > right)) {
 			return l;
