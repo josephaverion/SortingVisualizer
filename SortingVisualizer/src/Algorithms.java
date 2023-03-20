@@ -251,9 +251,11 @@ public class Algorithms {
 		do {
 			while(traversing_index < end && pivot >= visual.bar_height[traversing_index]) {
 				traversing_index++;
+				Thread.sleep(speed);
 			}
 			while(pivot < visual.bar_height[selected_index]) {
 				selected_index--;
+				Thread.sleep(speed);
 			}
 			if(traversing_index < selected_index) {
 				swap(traversing_index, selected_index);
