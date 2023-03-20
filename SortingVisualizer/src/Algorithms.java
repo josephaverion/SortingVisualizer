@@ -96,7 +96,6 @@ public class Algorithms {
 				swap(parent, child);
 				child = parent;
 				parent = (child - 1) / 2;
-				Thread.sleep(speed);
 				visual.repaint();
 			}
 		}
@@ -112,6 +111,7 @@ public class Algorithms {
 		int n = visual.SIZE; 
 	    while (n > 0) {
 	    	current_index--;
+	    	Thread.sleep(speed);
 	    	n--; 
 	    	swap(0, n); 
 	    	int parent = 0; 
@@ -186,7 +186,9 @@ public class Algorithms {
 		while(leftArrIndex < temp_middle && rightArrIndex < temp.length) {
 			
 			traversing_index = leftArrIndex + start;
+			Thread.sleep(speed);
 			selected_index = rightArrIndex + start;
+			Thread.sleep(speed);
 				
 			if(temp[leftArrIndex] < temp[rightArrIndex]) {
 				visual.bar_height[newArrIndex++] = temp[leftArrIndex++];
