@@ -96,6 +96,7 @@ public class Algorithms {
 				swap(parent, child);
 				child = parent;
 				parent = (child - 1) / 2;
+				Thread.sleep(speed);
 				visual.repaint();
 			}
 		}
